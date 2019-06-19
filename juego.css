@@ -1,0 +1,59 @@
+.rectangle {
+    width: 500px;
+    height: 300px;
+    background: #ffffff;
+    background-color: rgb(250, 0, 255,);
+    position: absolute;
+    animation-name: salir;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes salir {
+    from {opacity:0; }
+    to {opacity:1; }
+}
+
+.circulo {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 150px;
+    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    /*line-hright: 200px;*/
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.5s;
+    animation-name: aparecer;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+  @keyframes aparecer {
+      from {opacity:0; }
+      to {opacity:1; }
+  }
+
+.pacman {
+    background-color: rgba(255, 255, 255, 0);
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    animation-name: crecer;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.crono {
+    float: right;
+    background-color: gray;
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+    border-bottom-left-radius: 50px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
